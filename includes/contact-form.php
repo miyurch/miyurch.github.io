@@ -3,7 +3,7 @@
 $string = file_get_contents("config.json");
 $option = json_decode($string);
 
-define("MAIL_HOST", $option->MAIL_HOST);
+define("rerost@ya.ru", $option->MAIL_HOST);
 define("MAIL_TITLE", $option->MAIL_TITLE);
 
 if( isset($_POST['name']) && isset($_POST['email']) && isset($_POST['msg']) ){
